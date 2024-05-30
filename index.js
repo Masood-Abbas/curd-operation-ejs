@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 const staticPath = path.join(__dirname, "public");
 app.use(express.static(staticPath));
-app.set("view engine", "ejs");
+app.set("view engine", "ejs"); 
 
 app.get("/", (req, res) => {
   res.render("index");
